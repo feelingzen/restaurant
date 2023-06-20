@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+body {
+    background-image: url('../assets/wings-background.jpg');
+    background-repeat: no-repeat; 
+    background-size: 160vw;
+    background-position: 0% 20%;
+    backdrop-filter: blur(10%);
+    padding: 10px;
+}
+
+#content {
+    > nav {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        gap: 10px min(100px, 5%);
+        margin: 10px;
+        flex-wrap: wrap;
+        > img {
+            content: url('../assets/logo.png');
+            width: min(100px, 30%);
+
+        }
+        > ul {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            > li {
+                text-align: center;
+                color: white;
+                list-style-type: none;
+                font-weight: 800;
+                font-size: 1.2rem;
+                letter-spacing: 1px;
+            }
+            > li:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    > #homeContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20vh;
+        text-align: center;
+        > h1 {
+            font-size: 6rem;
+            color: white;
+            font-weight: 800;
+        }
+        > h5 {
+            font-size: 1.2rem;
+            color: white;
+        }
+    }
+    > #contactContent {
+        margin-top: 10vh;
+        display: flex;
+        padding: 10px;
+        height: 60vh;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        > h2 {
+            font-size: min(5rem, 15vw);
+            font-weight: 1000;
+        }
+        > h5 {
+            text-align: center;
+            font-size: min(1.3rem, 3.75vw);
+            margin-bottom: 30px;
+        }
+        > h6 {
+            font-size: 2rem;
+            font-size: min(2rem, 6vw);
+        }
+    
+    }
+    > #menuContent {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 10vh;
+        > h2 {
+            font-size: 4rem;
+            text-align: center;
+        }
+        > div {
+            margin-left: 20vw;
+            > h3 {
+                font-size: 2rem;
+            }
+            > p {
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        background-size: 500vw;    
+        background-position: 15% 20%;
+        overflow: auto;
+    }
+}
